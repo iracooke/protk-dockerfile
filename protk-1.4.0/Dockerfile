@@ -55,5 +55,5 @@ RUN apt-get update \
 	linux-libc-dev \
 	make \
 	pkg-config
-      
-ENV PATH $RUBY_DIR/bin:$PATH
+
+ENV PATH $RUBY_DIR/bin:$PROTK_INSTALL_DIR/tools/pwiz:$PATH
