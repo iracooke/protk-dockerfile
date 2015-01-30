@@ -36,7 +36,7 @@ RUN apt-get update \
       && $RUBY_DIR/bin/protk_setup.rb msgfplus \
       && $RUBY_DIR/bin/protk_setup.rb pwiz \
       && $RUBY_DIR/bin/protk_setup.rb clean \
-      && chmod -R a+x $PROTK_INSTALL_DIR/Logs \
+      && chmod -R a+w $PROTK_INSTALL_DIR/Logs \
       && apt-get -y purge --auto-remove \
 	autoconf \
 	automake \
