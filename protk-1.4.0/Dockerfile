@@ -7,25 +7,25 @@ ENV RUBY_DIR /opt/ruby
 
 RUN apt-get update \
       && apt-get -y install --no-install-recommends \
-	autoconf \
-	automake \
-        build-essential \
-        bzip2 \
-	curl \
-	libbz2-dev \
-	libc6-dev \
-	libgd2-noxpm-dev \
-	liblocal-lib-perl \
-	libxml-parser-perl \
-	libxml2 \
-	libxml2-dev \
-	libyaml-0-2 \
-	lsb-release \
-	openjdk-7-jre-headless \
-	pkg-config \
-	time \
-	unzip \
-	wget \
+	autoconf=2.69-1 \
+	automake=1:1.11.6-1 \
+        build-essential=11.5 \
+        bzip2=1.0.6-4 \
+	curl=7.26.0-1+wheezy12 \
+	libbz2-dev=1.0.6-4 \
+	libc6-dev=2.13-38+deb7u7 \
+	libgd2-noxpm-dev=2.0.36~rc1~dfsg-6.1 \
+	liblocal-lib-perl=1.008004-2 \
+	libxml-parser-perl=2.41-1+b1 \
+	libxml2=2.8.0+dfsg1-7+wheezy3 \
+	libxml2-dev=2.8.0+dfsg1-7+wheezy3 \
+	libyaml-0-2=0.1.4-2+deb7u5 \
+	lsb-release=4.1+Debian8+deb7u1 \
+	openjdk-7-jre-headless=7u75-2.5.4-1~deb7u1 \
+	pkg-config=0.26-1 \
+	time=1.7-24 \
+	unzip=6.0-8+deb7u2 \
+	wget=1.13.4-3+deb7u2 \
       && curl -SL https://github.com/postmodern/ruby-install/archive/v0.5.0.tar.gz | tar -zx \
       && ruby-install-0.5.0/bin/ruby-install --cleanup --install-dir $RUBY_DIR ruby 2.1 -- --disable-install-rdoc \
       && rm -rf ruby-install-0.5.0 \
