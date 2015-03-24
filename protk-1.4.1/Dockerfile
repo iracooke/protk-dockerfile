@@ -29,7 +29,7 @@ RUN apt-get update \
       && curl -SL https://github.com/postmodern/ruby-install/archive/v0.5.0.tar.gz | tar -zx \
       && ruby-install-0.5.0/bin/ruby-install --cleanup --install-dir $RUBY_DIR ruby 2.1 -- --disable-install-rdoc \
       && rm -rf ruby-install-0.5.0 \
-      && $RUBY_DIR/bin/gem install --no-document protk:1.4.0 \
+      && $RUBY_DIR/bin/gem install --no-document protk:1.4.1 \
       && $RUBY_DIR/bin/protk_setup.rb tpp \
       && $RUBY_DIR/bin/protk_setup.rb omssa \
       && $RUBY_DIR/bin/protk_setup.rb blast \
