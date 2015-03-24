@@ -13,7 +13,7 @@ RUN apt-get update \
         bzip2=1.0.6-4 \
 	curl=7.26.0-1+wheezy12 \
 	libbz2-dev=1.0.6-4 \
-	libc6-dev=2.13-38+deb7u7 \
+	libc6-dev=2.13-38+deb7u8 \
 	libgd2-noxpm-dev=2.0.36~rc1~dfsg-6.1 \
 	liblocal-lib-perl=1.008004-2 \
 	libxml-parser-perl=2.41-1+b1 \
