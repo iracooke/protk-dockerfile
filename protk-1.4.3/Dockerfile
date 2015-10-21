@@ -11,17 +11,17 @@ RUN apt-get update \
 	automake=1:1.11.6-1 \
         build-essential=11.5 \
         bzip2=1.0.6-4 \
-	curl=7.26.0-1+wheezy12 \
+	curl=7.26.0-1+wheezy13 \
 	libbz2-dev=1.0.6-4 \
 	libc6-dev=2.13-38+deb7u8 \
-	libgd2-noxpm-dev=2.0.36~rc1~dfsg-6.1 \
+	libgd2-noxpm-dev \
 	liblocal-lib-perl=1.008004-2 \
 	libxml-parser-perl=2.41-1+b1 \
-	libxml2=2.8.0+dfsg1-7+wheezy3 \
-	libxml2-dev=2.8.0+dfsg1-7+wheezy3 \
+	libxml2 \
+	libxml2-dev \
 	libyaml-0-2=0.1.4-2+deb7u5 \
 	lsb-release=4.1+Debian8+deb7u1 \
-	openjdk-7-jre-headless=7u75-2.5.4-1~deb7u1 \
+	openjdk-7-jre-headless \
 	pkg-config=0.26-1 \
 	time=1.7-24 \
 	unzip=6.0-8+deb7u2 \
